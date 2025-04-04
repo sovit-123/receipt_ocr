@@ -1,0 +1,13 @@
+torch==2.5.1
+torchvision==0.20.1
+jupyter
+protobuf==3.20
+pandas==2.2.3
+evaluate==0.4.3
+matplotlib==3.10.1
+accelerate==1.5.2
+jiwer==3.1.0
+transformers==4.50
+wandb==0.18.7
+flash-attn==2.7.4.post1
+peft==0.15.1

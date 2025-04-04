@@ -1,0 +1,6 @@
+notebooks/.ipynb_checkpoints
+notebooks/archive
+notebooks/smolvlm_receipt_ft
+notebooks/wandb
+input
+.env
