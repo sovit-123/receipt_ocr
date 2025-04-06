@@ -12,3 +12,5 @@ wandb==0.18.7
 flash-attn==2.7.4.post1
 peft==0.15.1
 qwen-vl-utils==0.0.10
+python-dotenv
+google-genai
