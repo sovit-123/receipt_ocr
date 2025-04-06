@@ -14,3 +14,7 @@ peft==0.15.1
 qwen-vl-utils==0.0.10
 python-dotenv
 google-genai
+scikit-learn
+trl==0.12.1
+bitsandbytes
+tensorboard
