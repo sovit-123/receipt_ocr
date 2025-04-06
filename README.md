@@ -1,5 +1,9 @@
 # README
 
+Fine-tuned SmolVLM models for receipt OCR with limited compute.
+
+![](assets/receipt_ocr_800x800.png)
+
 ## Resources
 
 * [Extending TrOCR for Text Localization-Free OCR of Full-Page Scanned Receipt Images](https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Zhang_Extending_TrOCR_for_Text_Localization-Free_OCR_of_Full-Page_Scanned_Receipt_ICCVW_2023_paper.pdf)
