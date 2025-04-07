@@ -4,6 +4,27 @@ Fine-tuned SmolVLM models for receipt OCR with limited compute.
 
 ![](assets/receipt_ocr_800x800.png)
 
+## Setup SROIE v2 Dataset
+
+Download the SROIE v2 dataset from [here on Kaggle](https://www.kaggle.com/datasets/urbikn/sroie-datasetv2).
+
+Move it to the input directory and if needed rename the parent directory of the downloaded dataset so that the structure looks like this:
+
+```
+input/sroie_v2/
+└── SROIE2019
+    ├── test
+    │   ├── box  [347 entries exceeds filelimit, not opening dir]
+    │   ├── entities  [347 entries exceeds filelimit, not opening dir]
+    │   └── img  [347 entries exceeds filelimit, not opening dir]
+    └── train
+        ├── box  [626 entries exceeds filelimit, not opening dir]
+        ├── entities  [626 entries exceeds filelimit, not opening dir]
+        └── img  [626 entries exceeds filelimit, not opening dir]
+```
+
+Here, the parent dataset directory has been renamed to `sroie_v2` for easier access.
+
 ## Resources
 
 * [Extending TrOCR for Text Localization-Free OCR of Full-Page Scanned Receipt Images](https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Zhang_Extending_TrOCR_for_Text_Localization-Free_OCR_of_Full-Page_Scanned_Receipt_ICCVW_2023_paper.pdf)
