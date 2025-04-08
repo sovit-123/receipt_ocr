@@ -25,6 +25,14 @@ input/sroie_v2/
 
 Here, the parent dataset directory has been renamed to `sroie_v2` for easier access.
 
+## Steps to Run
+
+After setting up the data in the above structure:
+
+* Prepare the text annotation files using Qwen2-VL 2B in full precision. These generated text files will act as our ground truth to train the smaller VLMs. For this run the code in `notebooks/qwen2_vl_ocr.ipynb` notebook.
+* Then start the fine-tuning process by running the `notebooks/smol_vlm_sft_sroie.ipynb` notebook.
+* You can use the `notebooks/smolvlm_inference_ft.ipynb` to run inference using the trained adapters.
+
 ## Resources
 
 * [Extending TrOCR for Text Localization-Free OCR of Full-Page Scanned Receipt Images](https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Zhang_Extending_TrOCR_for_Text_Localization-Free_OCR_of_Full-Page_Scanned_Receipt_ICCVW_2023_paper.pdf)
