@@ -1,0 +1,1 @@
+Evaluations of VLM generated ground truth data and fine-tuned models inference with the ground truth data provided with SROIE v2 dataset.
