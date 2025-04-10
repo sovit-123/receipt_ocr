@@ -4,5 +4,6 @@ notebooks/archive
 notebooks/wandb
 input/*
 .env
+.ipynb_checkpoints
 
 !input/input.txt
