@@ -7,3 +7,4 @@ input/*
 .ipynb_checkpoints
 
 !input/input.txt
+input.zip
