@@ -29,9 +29,14 @@ Here, the parent dataset directory has been renamed to `sroie_v2` for easier acc
 
 After setting up the data in the above structure:
 
-* Prepare the text annotation files using Qwen2-VL 2B in full precision. These generated text files will act as our ground truth to train the smaller VLMs. For this run the code in `notebooks/qwen2_vl_ocr.ipynb` notebook.
+* Prepare the text annotation files using the annotation notebooks in `notebooks/annot_notebooks` directory. These generated text files will act as our ground truth to train the smaller VLMs. For example using, the `qwen2_5_vl_3b_ocr.ipynb` notebook will result all the annotations to be saved in `input/qwen2_5_vl_3b_annots` directory. You can modify this path in the notebook as well.
 * Then start the fine-tuning process by running the `notebooks/smol_vlm_sft_sroie.ipynb` notebook.
 * You can use the `notebooks/smolvlm_inference_ft.ipynb` to run inference using the trained adapters.
+
+**Currently best performing annotation creation model: Qwen2.5-VL 3B:**
+
+* Training data CER compared to the case insensitive SROIE v2 box texts: 0.279
+* Test data CER compared to the case insensitive SROIE v2 box texts: CER: 0.313
 
 ## Resources
 
