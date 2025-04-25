@@ -18,3 +18,4 @@ scikit-learn
 trl==0.12.1
 bitsandbytes
 tensorboard
+anthropic==0.50.0
