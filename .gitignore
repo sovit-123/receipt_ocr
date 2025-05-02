@@ -8,3 +8,4 @@ input/*
 archive/
 !input/input.txt
 input.zip
+trained_models/
