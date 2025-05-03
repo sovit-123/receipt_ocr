@@ -1,6 +1,5 @@
 .ipynb_checkpoints*
 notebooks/archive
-# notebooks/smolvlm_receipt_ft
 notebooks/wandb
 input/*
 .env
@@ -8,4 +7,6 @@ input/*
 archive/
 !input/input.txt
 input.zip
-trained_models/
+
+# Trained models to ommit.
+notebooks/trained_models/smolvlm256m_fullft_qwen2_5_vl_3b_gt_20250501
