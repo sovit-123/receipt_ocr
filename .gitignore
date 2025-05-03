@@ -9,4 +9,4 @@ archive/
 input.zip
 
 # Trained models to ommit.
-notebooks/trained_models/smolvlm256m_fullft_qwen2_5_vl_3b_gt_20250501
+notebooks/trained_models/full_ft/smolvlm256m_fullft_qwen2_5_vl_3b_gt_20250501
