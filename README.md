@@ -38,6 +38,14 @@ After setting up the data in the above structure:
 * Training data CER compared to the case insensitive SROIE v2 box texts: 0.279
 * Test data CER compared to the case insensitive SROIE v2 box texts: CER: 0.313
 
+## Running Inference Script
+
+You can switch `--model-id` with you local trained model directory path and `--input` with input image of your choice.
+
+```
+python inference_scripts/inference.py --model-id sovitrath/receipt-ocr-full-ft --input inference_data/image_1.jpeg
+```
+
 ## Resources
 
 * [Extending TrOCR for Text Localization-Free OCR of Full-Page Scanned Receipt Images](https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Zhang_Extending_TrOCR_for_Text_Localization-Free_OCR_of_Full-Page_Scanned_Receipt_ICCVW_2023_paper.pdf)
