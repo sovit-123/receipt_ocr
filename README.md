@@ -6,6 +6,10 @@ Fine-tuned SmolVLM models for receipt OCR with limited compute.
 
 ## Setup SROIE v2 Dataset
 
+**[Download the dataset from Kaggle](https://www.kaggle.com/datasets/sovitrath/receipt-ocr-input/data) if you do not want to create the annotations on your own**. 
+
+*Else following the below steps.*
+
 Download the SROIE v2 dataset from [here on Kaggle](https://www.kaggle.com/datasets/urbikn/sroie-datasetv2).
 
 Move it to the input directory and if needed rename the parent directory of the downloaded dataset so that the structure looks like this:
@@ -29,14 +33,19 @@ Here, the parent dataset directory has been renamed to `sroie_v2` for easier acc
 
 After setting up the data in the above structure:
 
-* Prepare the text annotation files using the annotation notebooks in `notebooks/annot_notebooks` directory. These generated text files will act as our ground truth to train the smaller VLMs. For example using, the `qwen2_5_vl_3b_ocr.ipynb` notebook will result all the annotations to be saved in `input/qwen2_5_vl_3b_annots` directory. You can modify this path in the notebook as well.
+* Prepare the text annotation files using the annotation notebooks in `notebooks/annot_notebooks` directory. These generated text files will act as our ground truth to train the smaller VLMs. For example using, the `qwen2_5_vl_3b_ocr.ipynb` notebook will result all the annotations to be saved in `input/qwen2_5_vl_3b_annots` directory. You can modify this path in the notebook as well. You can also try using other VLMs for creating better annotations.
 * Then start the fine-tuning process by running the `notebooks/smol_vlm_sft_sroie.ipynb` notebook.
 * You can use the `notebooks/smolvlm_inference_ft.ipynb` to run inference using the trained adapters.
 
+## Trained Models
+
+* The trained adapters are available with this GitHub repository (`notebooks/trained_models` directory).  
+* The fully fine-tuned models are available here. You can just switch the `model_id` in the inference notebooks or the inference script (`inference_scripts` directory).
+
 **Currently best performing annotation creation model: Qwen2.5-VL 3B:**
 
-* Training data CER compared to the case insensitive SROIE v2 box texts: 0.279
-* Test data CER compared to the case insensitive SROIE v2 box texts: CER: 0.313
+* Training data CER compared to the case insensitive SROIE v2 box texts: **0.279**
+* Test data CER compared to the case insensitive SROIE v2 box texts: CER: **0.313**
 
 ## Running Inference Script
 
